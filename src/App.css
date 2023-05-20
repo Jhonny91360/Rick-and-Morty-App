@@ -1,0 +1,303 @@
+.body {
+   background-image: url(/public/812062.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+.App {
+   text-align: center;
+}
+
+.contenedor {
+   
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .cuadro {
+   position: relative; 
+   width: 320px;
+   height: 600px;
+   background-color: #f5f5f5;
+   border: 2px solid #cccccc;
+   border-radius: 8px;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+   transition: transform 0.2s ease-in-out;
+   /* margin-top: 4%; */
+   margin: 20px;
+   margin-top: 50px;
+   /* display: flex; */
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   font-weight: bold;
+   color: #0b7798;
+   font-family: "Helvetica Neue", Arial, sans-serif;
+ }
+ 
+ .cuadro:hover {
+   transform: scale(1.1);
+ }
+
+
+ .botonSearch {
+   background-color: #0b7798; /* Color de fondo */
+   border: none; /* Quitamos el borde */
+   color: rgb(251, 251, 251); /* Color del texto */
+   padding: 12px 24px; /* Tamaño del relleno */
+   text-align: center; /* Centramos el texto */
+   text-decoration: none; /* Quitamos la subrayado del texto */
+   display: inline-block; /* Mostramos el botón en línea */
+   font-size: 16px; /* Tamaño de la fuente */
+   border-radius: 5px; /* Radio de la esquina del botón */
+   cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+   transition: background-color 0.3s ease-in-out; /* Agregamos una transición para suavizar los cambios */
+   margin: 10px;
+ }
+ 
+ /* .botonSearch:hover {
+  color: #fffdfd;  
+  background-color: #ffdd57; 
+  } */
+
+ .inputSearch {
+   background-color: #f2f2f2; /* Color de fondo */
+   border: none; /* Quitamos el borde */
+   color: #333; /* Color del texto */
+   padding: 12px; /* Tamaño del relleno */
+   font-size: 16px; /* Tamaño de la fuente */
+   border-radius: 5px; /* Radio de la esquina del botón */
+   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+   transition: box-shadow 0.3s ease-in-out; /* Agregamos una transición para suavizar los cambios */
+ }
+ 
+ .inputSearch:focus {
+   outline: none; /* Quitamos el borde al hacer foco */
+   box-shadow: 0 0 0 2px #0b7798; /* Agregamos una sombra al hacer foco */
+ }
+
+ .buttonClose {
+   position: absolute; /* Establecemos la posición como absoluta */
+   top: 0px; /* Colocamos el botón 0px desde arriba */
+   right: 0px; /* Colocamos el botón 0px desde la derecha */
+   padding: 8px; /* Tamaño del relleno */
+   background-color: #0b7798; /* Color de fondo */
+   color: #fff; /* Color del texto */
+   border: none; /* Quitamos el borde */
+   border-radius: 5px; /* Radio de la esquina del botón */
+   cursor: pointer; /* Cambiamos el cursor al pasar el ratón por encima */
+ }
+
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color:  #f5f5f5;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20%;
+}
+
+.navbar button {
+  border: none;
+  background-color: transparent;
+  color: #0b7798;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar button:hover {
+  color: #ffdd57;
+  transform: scale(1.1);
+}
+
+.navbar #button1 {
+  margin-right: 20px;
+}
+
+.navbar #button2 {
+  margin-right: 20px;
+}
+
+.navbar #button3 {
+  margin-right: 20px;
+}
+
+.navbar #button4 {
+  margin-right: 0;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar #button4:hover {
+  background-color: #ffdd57;
+  color: #292929;
+  transform: scale(1.1);
+}
+
+/* Estilos para selects */
+.select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  color: #0b7798;
+  width: 200px;
+  margin: 10px;
+  border-radius: 5%;
+}
+
+/* Estilos para las opciones del primer select */
+.select #orden {
+  width: 150px;
+}
+
+/* Estilos para las opciones del segundo select */
+.select #genero {
+  width: 250px;
+}
+
+/* Cambiar el color de fondo al seleccionar una opción */
+.select:focus {
+  outline: none;
+  border: 2px solid #ffdd57;
+  /* background-color: #ffdd57; */
+}
+
+/* Cambiar el color de fondo de las opciones al pasar el cursor */
+.select option:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+.personaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  color:#0b7798;
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.personaje img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.personaje h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.personaje p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.personaje p span {
+  font-weight: bold;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 1%;
+  color: #0b7798;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0b7798;
+  max-width: 800px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1d185;
+  padding: 50px;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 30%;
+  color: #0b7798;
+}
+
+.login-form img {
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.login-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.login-form button[type="submit"] ,button{
+  background-color: #171717;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #cd34f8;
+}
+.login-form button:hover {
+  background-color: #cd34f8;
+}
+
