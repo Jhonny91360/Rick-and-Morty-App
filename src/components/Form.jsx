@@ -2,7 +2,7 @@ import { useState } from "react";
 import validation from "../validation";
 import style from "../ccsModules/Form.module.css";
 import axios from 'axios';
-const URL = 'http://localhost:3001/rickandmorty/login/';
+const URL = 'https://rick-and-morty-server-production-ee1d.up.railway.app/rickandmorty/login/';
 
 function Form({login}){
 

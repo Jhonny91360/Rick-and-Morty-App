@@ -10,7 +10,7 @@ import axios from "axios";
 
 export const readAllFav= ()=>{
     
-    const endpoint = 'http://localhost:3001/rickandmorty/fav';
+    const endpoint = 'https://rick-and-morty-server-production-ee1d.up.railway.app/rickandmorty/fav';
     return async (dispatch) => {
       try {
          const response= await axios.get(endpoint)
@@ -24,7 +24,7 @@ export const readAllFav= ()=>{
 }
 
 export const addFav =  (character) => {
-    const endpoint = 'http://localhost:3001/rickandmorty/fav';
+    const endpoint = 'https://rick-and-morty-server-production-ee1d.up.railway.app/rickandmorty/fav';
     return async (dispatch) => {
       //  axios.post(endpoint, character).then(({ data }) => {
       //     return dispatch({type: 'ADD_FAV',payload: data,});
@@ -54,7 +54,7 @@ export const addFav =  (character) => {
    
 // }
 export const removeFav = (id) => {
-    const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id;
+    const endpoint = 'https://rick-and-morty-server-production-ee1d.up.railway.app/rickandmorty/fav/' + id;
     return async (dispatch) => {
       //  axios.delete(endpoint).then(({ data }) => {
       //     return dispatch({type: 'REMOVE_FAV',payload: data,});

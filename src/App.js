@@ -33,7 +33,7 @@ function App() {
       //    }
       // });
       try {
-         const response= await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+         const response= await axios(`https://rick-and-morty-server-production-ee1d.up.railway.app/rickandmorty/character/${id}`)
          const {data}=response
             if (data.name && !characters.find( (character)=>character.id===data.id   )) {
                setCharacters((oldChars) => [...oldChars, data]);
@@ -57,7 +57,7 @@ function App() {
    //Con express
    async function login(userData) {
       const { email, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login/';
+      const URL = 'https://rick-and-morty-server-production-ee1d.up.railway.app/rickandmorty/login/';
       //console.log("mi axios ",URL + `?email=${email}&password=${password}` )
       // axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
       //    const { access } = data;
